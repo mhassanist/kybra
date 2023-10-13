@@ -24,7 +24,7 @@ def create_user(username: str) -> User:
     id = generate_id()
     user: User = {
         "id": id,
-        "created_at": ic.time(),
+        "created_at": ,
         "recording_ids": [],
         "username": username,
     }
@@ -111,7 +111,7 @@ def read_recording_by_id(id: ) -> :
     return recordings.get(id)
 
 
-class DeleteRecordingResult(Variant, total=False):
+class DeleteRecordingResult(, total=False):
     Ok: Recording
     Err: "DeleteRecordingError"
 
